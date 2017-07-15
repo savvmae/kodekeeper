@@ -2,6 +2,9 @@
   "name": "code-snippet",
   "version": "1.0.0",
   "main": "application.js",
+  "engines": {
+    "node": ">=7.6.0"
+  },
   "directories": {
     "test": "test"
   },
