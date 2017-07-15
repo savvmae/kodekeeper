@@ -1,0 +1,23 @@
+{
+  "name": "code-snippet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "application.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "crypto": "0.0.3",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.10.8",
+    "mustache-express": "^1.2.5"
+  }
+}

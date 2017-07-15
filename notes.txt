@@ -1,0 +1,22 @@
+**********
+fix user routes to call to db --- done!
+
+set up dashboard to get all data -- done!
+
+set up filters for dashboard****** ---- done!!
+
+add view single snippet button and view -- done!
+
+render filtered results -- done
+
+write tests 
+    1. user routes --- done
+    2. snippet routes -- causing problems, need help 
+*********************** tests causing huge problems. can't figure out how to include session data
+
+styling -- almost
+
+heroku
+
+
+

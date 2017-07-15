@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+    <body>
+        <h1 class="center-text-large">Dashboard</h1>
+        <a class="center-text-large buttons vertical-center-text" href="/api/create-snippet">New Snippet </a> 
+        <div class="form-wrapper-center">
+        <form class="center" id="language-filter" method="POST" action="/api/dashboard/language">
+            <h5 class="center-text-large">Filter by Language</h5>
+            <select class="inputs select" name="language">
+                {{#languages}}
+                <option value="{{.}}">{{.}}</option>
+                {{/languages}}
+            </select>
+            <button class="buttons" type="submit">Search</button>
+        </form>
+        
+        <form class="center" id="tags-filter"  method="POST" action="/api/dashboard/tag">
+            <h5 class="center-text-large">Filter by Tag</h5>
+            <select class="inputs select" name="tags">
+                {{#tags}}
+                <option value="{{.}}">{{.}}</option>
+                {{/tags}}
+            </select>
+            <button class="buttons"type="submit">Search</button>
+        </form>
+        </div>
+       {{^snippets}}
+        <p class=center-text-large>No Snippets Yet!</p>
+       {{/snippets}}
+        
+        {{#snippets}}
+        <div class="form-wrapper-center">
+            <div class="snippet-box">
+            <p class="component">Title: {{title}}</p>
+            <p class="component">Body: {{body}}</p>
+            <p class="component">Notes: {{notes}}</p>
+            <p class="component">Language: {{language}}</p>
+            <p class="component">Tags: {{#tags}} {{.}} {{/tags}}</p>
+            <form class="component" id="single-snippet" method="GET" action="/api/single-snippet/{{id}}"> 
+                <button class="buttons" type="submit">View Snippet</button>
+            </form>
+            </div>
+            </div>
+        {{/snippets}}
+    </body>
+</html>

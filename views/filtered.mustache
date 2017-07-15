@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+    <body>
+        
+        <h1 class="center-text-large">Filtered Results</h1>
+        
+        
+        {{#snippets}}
+        <div class="form-wrapper-center">
+        <div class="snippet-box">
+            <p class="component">Title: {{title}}</p>
+            <p class="component">Body: {{body}}</p>
+            <p class="component">Notes: {{notes}}</p>
+            <p class="component">Language: {{language}}</p>
+            <p class="component">Tags: {{#tags}} {{.}} {{/tags}}</p>
+        </div>
+    </div>
+        {{/snippets}}
+    </body>
+
+
+
+</html>
