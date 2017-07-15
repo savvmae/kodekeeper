@@ -3,7 +3,7 @@ const router = express.Router();
 const model = require('../models/users');
 const bodyParser = require('body-parser');
 
-router.get('/api/dashboard', async  (request, response) => {
+router.get('/api/dashboard', async (request, response) => {
 
     if (request.session.isAuthenticated === true) {
         var user = await model.users.find({ _id: request.session.userId })
@@ -35,7 +35,7 @@ router.get('/api/dashboard', async  (request, response) => {
     }
 });
 
-router.post('/api/dashboard/language', async  (request, response) => {
+router.post('/api/dashboard/language', async (request, response) => {
     if (request.session.isAuthenticated === true) {
         var requestedLanguageSnippets = [];
         var user = await model.users.find({ _id: request.session.userId })
@@ -57,7 +57,7 @@ router.post('/api/dashboard/language', async  (request, response) => {
     }
 });
 
-router.post('/api/dashboard/tag', async  (request, response) => {
+router.post('/api/dashboard/tag', async (request, response) => {
     if (request.session.isAuthenticated === true) {
         var containsTag = [];
         var user = await model.users.find({ _id: request.session.userId })
