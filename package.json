@@ -1,7 +1,6 @@
 {
   "name": "code-snippet",
   "version": "1.0.0",
-  "description": "",
   "main": "application.js",
   "directories": {
     "test": "test"
@@ -22,5 +21,17 @@
     "mongodb": "^2.2.30",
     "mongoose": "^4.10.8",
     "mustache-express": "^1.2.5"
-  }
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savvmae/kodekeeper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/savvmae/kodekeeper/issues"
+  },
+  "homepage": "https://github.com/savvmae/kodekeeper#readme",
+  "description": ""
 }
