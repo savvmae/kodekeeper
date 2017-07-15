@@ -18,6 +18,7 @@ write tests
 
 
 heroku
+-- crashes with async, db connection or bad support
 
 
 
