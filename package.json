@@ -19,6 +19,7 @@
     "express": "^4.15.3",
     "express-session": "^1.15.3",
     "mocha": "^3.4.2",
+    "mongodb": "^2.2.30",
     "mongoose": "^4.10.8",
     "mustache-express": "^1.2.5"
   }
