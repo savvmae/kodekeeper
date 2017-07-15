@@ -14,11 +14,7 @@ styling -- done
 write tests 
     1. user routes --- done
     2. snippet routes -- causing problems, need help 
-*********************** tests causing huge problems. can't figure out how to include session data
-
-
-heroku
--- crashes with async, db connection or bad support
+*********************** tests causing huge problems. can't figure out how to include session data, listening for routes -- good!
 
 
 
