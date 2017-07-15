@@ -9,12 +9,13 @@ add view single snippet button and view -- done!
 
 render filtered results -- done
 
+styling -- done
+
 write tests 
     1. user routes --- done
     2. snippet routes -- causing problems, need help 
 *********************** tests causing huge problems. can't figure out how to include session data
 
-styling -- almost
 
 heroku
 
