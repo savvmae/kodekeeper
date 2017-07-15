@@ -16,5 +16,6 @@ write tests
     2. snippet routes -- causing problems, need help 
 *********************** tests causing huge problems. can't figure out how to include session data, listening for routes -- good!
 
-
+*************************
+in order for app to run locally, post routes in js/jquery files need to be reassigned to local host
 
