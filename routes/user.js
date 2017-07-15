@@ -12,7 +12,7 @@ router.get('/signup', function (request, response) {
     return response.render('signup');
 });
 
-router.post('/api/signup', async function (request, response) {
+router.post('/api/signup', async (request, response) => {
     var user = await model.users.find({ email: request.body.email });
     if (user[0]) {
         return response.send({ message: "That email is already registered. Log in to continue." })
@@ -39,7 +39,7 @@ router.post('/api/signup', async function (request, response) {
     }
 });
 
-router.post('/api/login', async function (request, response) {
+router.post('/api/login', async  (request, response) => {
     var hashed = crypto.pbkdf2Sync(request.body.password, 'salt', 10, 512, 'sha512').toString('base64');
     var user = await model.users.find({ email: request.body.email, password: hashed });
     if (user[0]) {
