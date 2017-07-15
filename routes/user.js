@@ -8,7 +8,7 @@ router.get('/', (request, response) => {
     return response.render('login');
 });
 
-router.get('/signup', async function (request, response) {
+router.get('/signup', function (request, response) {
     return response.render('signup');
 });
 
