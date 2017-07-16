@@ -81,7 +81,11 @@ router.post('/api/dashboard/tag', async (request, response) => {
 });
 
 router.get('/api/create-snippet',function (request, response) {
+    if (request.session.isAuthenticated === true) {
         return response.render('create-snippet');
+         } else {
+        return response.redirect('/');
+    }
 });
 
 router.post('/api/create-snippet', async (request, response) =>{

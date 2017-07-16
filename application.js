@@ -17,7 +17,9 @@ application.set('views', './views');
 application.set('view engine', 'mustache');
 application.set('port', process.env.PORT || 3000);
 
-mongoose.connect('mongodb://heroku_4hvg4xkw:tu5o37sdpnp532p7o2dmu6rul5@ds159662.mlab.com:59662/heroku_4hvg4xkw');
+// mongoose.connect('mongodb://heroku_4hvg4xkw:tu5o37sdpnp532p7o2dmu6rul5@ds159662.mlab.com:59662/heroku_4hvg4xkw');
+
+mongoose.connect('mongodb://localhost:27017/Snippets');
 
 application.use(express.static(__dirname + '/public'));
 application.use(bodyParser.json());

@@ -3,7 +3,7 @@ $('#signup-form').on('submit', function (event){
     var email = $('#email').val();
     var password = $('#password').val();
 
-    $.post('https://kodekeeper.herokuapp.com/api/signup', {email: email, password: password})
+    $.post('http://localhost:3000/api/signup', {email: email, password: password})
     .then(function(response) {
         console.log(response);
         if (response.message === "success") {
